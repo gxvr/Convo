@@ -1,0 +1,8 @@
+/*Sidebar Header*/
+
+@media (max-width: 1268px) {
+	.user-photo {
+		display: none;
+		left: 130px;
+	}
+}

@@ -1,0 +1,1277 @@
+/* ==============================================
+=================================================
+				   ~ General ~
+=================================================
+============================================== */
+
+body {
+    font-size: 12px;
+    font-family: "Segoe UI",
+    "Roboto",
+    "Helvetica",
+    "Arial",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UISymbol";
+    overflow: hidden;
+    image-rendering: crisp-edges;
+}
+
+.body *::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+    position: absolute;
+    left: 0;
+}
+
+.body *::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+}
+
+.body *:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+
+
+/* ==============================================
+=================================================
+				   ~ Start Side Panel ~
+=================================================
+============================================== */
+
+.side-panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #5769fe;
+    color: white;
+    width: 405px;
+    z-index: 182;
+}
+
+
+
+
+/*----------------------------------
+Side panel header
+------------------------------------*/
+
+.side-panel-header {
+    height: 90px;
+    background: #4f60f3;
+
+}
+
+.side-panel-header-two {
+    height: 90px;
+    background: #5a40d1;
+
+}
+
+
+.logo {
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    width: 120px;
+    z-index: 146;
+    float: left;
+}
+
+
+.icons {
+    position: absolute;
+    right: 0%;
+    float: right;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.icon-more2 {
+    float: right;
+    padding: 35px 35px;
+    cursor: pointer;
+}
+
+.icon-more2 a {
+    color: #fff;
+    padding: 18px;
+
+}
+
+.icon-more2 span {
+    font-size: 23px;
+}
+
+.icon-more a {
+    color: #f75f5e;
+}
+
+.icon-more a:hover {
+    color: #f75f5e;
+}
+
+
+
+/****************************
+
+Notification Status
+
+*****************************/
+
+.noti-status {
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    position: absolute;
+    border: 2px solid #4f60f3;
+    background: #40EDA1;
+    margin-left: 93px;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------
+Side panel profile
+------------------------------------*/
+
+.user-photo {
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    z-index: 146;
+    float: right;
+    cursor: pointer;
+}
+
+.user-photo .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('../img/pro.png') no-repeat white;
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+
+/* User Status */
+
+.status {
+    width: 13px;
+    height: 13px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    position: absolute;
+
+    border: 2px solid #4f60f3;
+}
+
+.user-photo .online {
+    background: #40EDA1;
+}
+
+.user-photo .offline {
+    background: #E74C3C;
+}
+
+/* Status Ends */
+
+/* Search Starts */
+
+.side-panel .search-box {
+    float: left;
+    width: 230px;
+    height: 40px;
+    position: relative;
+    margin: 40px 50px;
+}
+
+.side-panel .search-box input,
+.side-panel .search-box .icon {
+    transition-duration: .3s;
+}
+
+.side-panel .search-box input {
+    font-family: 'Segoe UI', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    text-indent: 15px;
+    font-size: 13px;
+    height: 50px;
+    z-index: 2;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    transition-timing-function: cubic-bezier(0.3, 1.5, 0.6, 1);
+}
+
+.search-box ::-webkit-input-placeholder {
+    /* Chrome */
+    color: #fff;
+    opacity: 1;
+}
+
+.search-box :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+    opacity: 1;
+}
+
+.search-box ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+    opacity: 1;
+}
+
+.search-box :-moz-placeholder {
+    /* Firefox 4 - 18 */
+    color: #fff;
+    opacity: 1;
+}
+
+
+
+.side-panel .search-box input:focus {
+    width: 118%;
+}
+
+.side-panel .search-box input:focus ~ .icon {
+    opacity: 1;
+    z-index: 3;
+    width: 0px;
+}
+
+.side-panel .search-box .icon {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 1;
+    cursor: pointer;
+    opacity: .5;
+    transition-timing-function: cubic-bezier(0.3, 1.5, 0.6, 1);
+}
+
+
+
+/*----------------------------------
+Left Panel Sides
+------------------------------------*/
+
+.side-one {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    display: block;
+    top: 0;
+}
+
+.side-two {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    top: -100%;
+    left: -100%;
+    -webkit-transition: left 0.3s ease;
+    transition: left 0.3s ease;
+    background: #4f60f3;
+
+}
+
+
+
+/*----------------------------------
+Temporary Users Starts  | Chats
+------------------------------------*/
+
+.side-panel {
+    line-height: 19px;
+}
+
+.side-panel .people {
+    margin-left: -1px;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-y: auto;
+    height: calc(100% - 200px);
+    width: 100%;
+    margin-top: 25px;
+}
+
+.counter {
+    padding: 13%;
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+.side-panel .people .person {
+    position: relative;
+    width: 100%;
+    padding: 15px 25% 25px;
+    cursor: pointer;
+    list-style: none;
+    padding-left: calc(10% + 1px);
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+.person .user-status {
+    width: 13px;
+    height: 13px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    position: absolute;
+    /*left: 36px;*/
+    border: 2px solid #5769fe;
+}
+
+
+.online {
+    background: #40EDA1;
+}
+
+.offline {
+    background: #E74C3C;
+}
+
+
+.person .verified-badge {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: -10;
+    width: 20px;
+    height: 27px;
+    background-size: 20px 20px;
+    background: url(../img/verified.png) no-repeat 0 3px;
+
+
+}
+
+.side-panel .people .person:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 100%;
+    height: 1.8px;
+    content: '';
+    background-color: #5f70fe;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.side-panel .people .person img {
+    float: left;
+    width: 50px;
+    /*! height: 50px; */
+    margin-right: 12px;
+    border-radius: 50%;
+}
+
+.side-panel .people .person .name {
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.side-panel .people .person .time {
+    /*
+	font-size: 14px;
+	position: absolute;
+	right: 10%;
+	padding: 0 0 5px 5px;
+	color: #fff;
+*/
+    position: absolute;
+    right: 10%;
+    font-size: 11px;
+    padding: 3px 8px;
+
+    border: 1px solid #E5E5E5;
+    border-radius: 15px;
+
+}
+
+.side-panel .people .person .preview {
+    font-size: 14px;
+    display: inline-block;
+    overflow: hidden !important;
+    width: 70%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #f3f3f3;
+    margin-top: 5px;
+}
+
+.side-panel .people .person.active,
+.people .person:hover {
+    background-color: #4f60f3;
+}
+
+.side-panel .people .person.active span,
+.people .person:hover span {
+    color: #fff;
+    background: transparent;
+}
+
+.side-panel .people .person.active:after,
+.container .left .people .person:hover:after {
+    display: none;
+}
+
+
+
+/* ==============================================
+=================================================
+   ~ Message Wrapper / Container Starts ~
+=================================================
+============================================== */
+
+.msg-wrapper {
+    height: 100%;
+    padding: 0px;
+    border-left: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+.msg-wrapper-header {
+    /*! padding: 10px; */
+    /*! position: absolute; */
+    height: 90px;
+    background: #fff;
+    /*! z-index: -9; */
+    width: 100%;
+    z-index: 9999;
+    border: solid 1px #d8d7ff;
+}
+
+.chat-user-meta {
+    float: left;
+    height: 100%;
+    padding: 25px 12px;
+    margin-left: 1.2em;
+    display: inline-block;
+    line-height: 1.5em;
+}
+
+
+.usr_name {
+    width: 100%;
+    display: flex;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #5769fe;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.usr_name__online {
+    display: block;
+    background: #00c853;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 8px;
+    animation-name: blinking;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+.user-typing {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    display: block;
+    color: #888;
+}
+
+.icon-video {
+    float: right;
+    height: 100%;
+    padding: 35px 35px;
+    color: #cccccc;
+}
+
+.icon-video .more {
+    cursor: pointer;
+}
+
+.icon-info {
+    float: right;
+    height: 100%;
+    padding: 35px 10px;
+    color: #cccccc;
+}
+
+.icon-info .more {
+    cursor: pointer;
+}
+
+.icon-more {
+    float: right;
+    height: 100%;
+    padding: 35px 35px;
+    color: #cccccc;
+}
+
+
+
+.icon-more .more {
+    cursor: pointer;
+}
+
+
+
+
+.icons-more a {
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.msg-wrapper-body {
+    height: 100%;
+    padding: 0px;
+    width: 100%;
+}
+
+.msg-container {
+    height: 80%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.msg-container {
+    height: calc(100% - 160px);
+    width: 100%;
+    overflow-y: scroll;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: solid 1px rgba(0, 0, 0, .075);
+    background: url(../img/fileuploader-dragdrop-background2.png) #f9fafb;
+}
+
+.msg-single {
+    clear: both;
+    margin-bottom: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 20px 0px 0px 20px;
+}
+
+.msg-conatiner {
+    font-size: 15.5px;
+    font-family: "Segoe UI", sans-serif;
+    float: left;
+    display: inline-block;
+    margin: 5px;
+    min-width: 160px;
+    min-height: 10px;
+    max-width: 400px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    padding: 20px 25px;
+    border-radius: 2px 10px 10px 10px;
+    display: inline-block;
+    color: #717171;
+    background: #FFF;
+    box-shadow: 0 5px 7px 0 rgba(194, 193, 255, 0.3);
+    cursor: pointer;
+    border: solid 1px #d8d7ff;
+}
+
+.msg-container .table-content-cell:first-child img {
+    border-radius: 50%;
+    width: 40px;
+}
+
+.message-seen {
+    color: #cccdd6;
+    font-size: 12px;
+    margin-top: 10px;
+    text-transform: lowercase;
+    left: 190px;
+}
+
+.like-true {
+    display: block;
+    float: left;
+    color: #ff3a3a;
+    cursor: pointer;
+    margin-top: 45px;
+    margin-left: 10px;
+}
+
+.like-false {
+    display: block;
+    float: left;
+    color: #bfbfbf;
+    cursor: pointer;
+    margin-top: 45px;
+    margin-left: 10px;
+}
+
+
+
+.fa-heart:before {
+    font-size: 15px;
+}
+
+.msg-container .sender-message-line .table-content-cell:first-child {
+    vertical-align: top;
+    width: 50px;
+}
+
+
+.msg-conatiner-two {
+    font-size: 15.5px;
+    font-family: "Segoe UI", sans-serif;
+    float: right;
+    display: inline-block;
+    margin: 5px;
+    min-width: 160px;
+    min-height: 10px;
+    max-width: 400px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    padding: 20px 25px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: inline-block;
+    color: #fff;
+    background: #5769fe;
+    border-radius: 10px 2px 10px 10px;
+    border: solid 1px #d8d7ff;
+    box-shadow: 0 5px 7px 0 rgba(194, 193, 255, 0.3);
+    cursor: pointer
+}
+
+
+.msg-conatiner-two .message-seen {
+    color: #9ca7ff;
+    font-size: 14px;
+    margin-top: 5px;
+    text-transform: lowercase;
+}
+
+
+
+/***********************
+
+Empty State
+
+************************/
+
+* {
+    font-family: 'Lato';
+}
+
+.empty_state {
+    position: relative;
+    top: -20px;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.empty_state i {
+    margin: auto;
+    margin-bottom: 0px;
+    font-size: 90px;
+}
+
+
+.empty_state h3 {
+    margin: 8px 0px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.empty_state p {
+    font-size: 14px;
+    margin: 0px;
+    color: #999;
+    text-align: center;
+}
+
+.empty_state button {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 8px;
+    margin: 20px auto auto auto;
+    width: 50%;
+    max-width: 200px;
+    background: #5769fe;
+    color: white;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+/***********************
+
+Empty State Ends
+
+************************/
+
+.close-modal {
+    color: #000;
+    text-decoration: none;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+
+}
+
+
+
+/*Users List*/
+
+.list-wrapper {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+
+
+.list-item {
+    background: #fff;
+    border-radius: 3px;
+    list-style: none;
+    padding: 20px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 13px;
+
+}
+
+.list-item-image {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.list-item-content {
+    margin-left: 20px;
+}
+
+.list-item-content h4,
+.list-item-content p {
+    margin: 0;
+}
+
+.list-item-content .button {
+    margin-top: 10px;
+}
+
+.list-item-content h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.list-item-content p {
+    margin-top: 5px;
+    color: #aaa;
+    font-size: 14px;
+
+}
+
+.list-item-content a {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 200px;
+    color: #efefef;
+    font-size: 30px;
+
+}
+
+.list-item-content a:hover {
+    color: #5769fe;
+
+}
+
+.list-item-content a:focus {
+    color: #5769fe;
+
+}
+
+
+/***********************
+
+Add Chat Modal Ends
+
+************************/
+
+.table-content {
+    display: table;
+    width: 100%;
+    margin: 0;
+}
+
+.table-content .table-content-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+.message-input {
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.message-input .wrap {
+    position: relative;
+}
+
+.message-input .wrap input {
+    font-family: "Segoe UI", sans-serif;
+    float: left;
+    border: none;
+    width: calc(100% - 130px);
+    padding: 22px 32px 10px 8px;
+    padding-bottom: 20px;
+    font-size: 1em;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 735px) {
+    .message-input .wrap input {
+        padding: 15px 32px 16px 8px;
+    }
+}
+
+.message-input .wrap input:focus {
+    outline: none;
+}
+
+.message-input .wrap .paperclip {
+    position: absolute;
+    right: 90px;
+    z-index: 4;
+    margin-top: 25px;
+    font-size: 1.3em;
+    color: #CCCCCC;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 735px) {
+    .message-input .wrap .paperclip .emoji {
+        margin-top: 17px;
+        right: 65px;
+    }
+}
+
+.message-input .wrap .paperclip:hover {
+    color: #40EDA1;
+}
+
+.message-input .wrap .emoji {
+    position: absolute;
+    right: 125px;
+    z-index: 4;
+    margin-top: 25px;
+    font-size: 1.3em;
+    color: #CCCCCC;
+    cursor: pointer;
+}
+
+.message-input .wrap .emoji:hover {
+    color: #EEB44F;
+}
+
+
+.message-input .wrap button {
+    float: right;
+    border: none;
+    width: 60px;
+    padding: 25px 0;
+    background-color: #5769fe;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 735px) {
+    .message-input .wrap button {
+        padding: 16px 0;
+    }
+}
+
+.message-input .wrap button:hover {
+    color: #f1f1f1;
+}
+
+.message-input .wrap button:focus {
+    outline: none;
+    color: #f1f1f1;
+}
+
+
+
+
+/*Emoji One Custom CSS*/
+
+.span6 {
+    float: left;
+    width: 85%;
+}
+
+
+
+/* ==============================================
+=================================================
+   ~ Message Wrapper / Container Ends ~
+=================================================
+============================================== */
+
+.msg-container {
+    overflow-y: scroll;
+
+}
+
+.msg-container {
+    padding: 10px;
+    animation: fade 0.25s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.msg-wrapper-body .input {
+    display: flex;
+}
+
+.msg-wrapper-body .input .btn,
+.msg-wrapper-body .input .emoji-btn {
+    line-height: 40px;
+    width: 75px;
+    padding: 25px 0;
+    text-align: center;
+    margin-left: 10px;
+    position: relative;
+    cursor: pointer;
+    color: #c3c3c3;
+}
+
+.emoji-message {
+    margin-left: 700px;
+}
+
+
+
+.msg-wrapper-body .input input {
+    font-size: 15px;
+    font-family: "Segoe UI", sans-serif;
+    border-radius: 2px;
+    margin-right: 0px;
+    border: none;
+    width: 100%;
+    flex: 1;
+    padding: 0px 20px;
+    font-weight: 600;
+    outline: none;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes flyin {
+    from {
+        transform: translateY(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.emoji-popup {
+    position: absolute;
+    top: -190px;
+    left: -143px;
+    height: 180px;
+    width: 200px;
+    background: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    text-align: center;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s;
+    box-sizing: border-box;
+}
+
+.emoji-wrapper {
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 1px #d8d7ff;
+}
+
+.emoji-popup .emoji-img {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.emoji-popup .emoji-img:hover {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+
+/*
+.emoji-btn:after {
+	content: '';
+	position: absolute;
+	border: 10px solid transparent;
+	border-top: 10px solid #999;
+	top: -10px;
+	left: 30px;
+	transition: all 0.25s;
+	opacity: 0;
+}
+*/
+
+.emoji-btn.open:after {
+    opacity: 1;
+}
+
+.emoji-btn.open .emoji-popup {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+
+/* ==============================================
+=================================================
+   ~ Buttons ~
+=================================================
+============================================== */
+
+.button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 60px auto;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.button {
+    font-family: "Segoe UI", sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #000;
+    overflow: hidden;
+    padding: 12px 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 60ms ease-in-out;
+    transition: all 60ms ease-in-out;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none !important;
+    color: #5769fe;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 160px;
+    flex: 0 0 160px;
+}
+
+.button:hover {
+    -webkit-transition: all 60ms ease;
+    transition: all 60ms ease;
+}
+
+.button:active {
+    -webkit-transition: all 60ms ease;
+    transition: all 60ms ease;
+}
+
+.button:focus {
+    outline: 1px dotted #959595;
+    outline-offset: -4px;
+}
+
+.button.-regular {
+    color: #202129;
+    background-color: #f2f2f2;
+}
+
+.button.-regular:hover {
+    color: #202129;
+    background-color: #e1e2e2;
+    opacity: 1;
+}
+
+.button.-regular:active {
+    background-color: #d5d6d6;
+    opacity: 1;
+}
+
+.button.-dark {
+    color: #FFFFFF;
+    background: #161616;
+}
+
+.button.-dark:focus {
+    outline: 1px dotted white;
+    outline-offset: -4px;
+}
+
+.button.-green {
+    color: #FFFFFF;
+    background: #3dd28d;
+}
+
+.button.-blue {
+    color: #FFFFFF;
+    background: #4f60f3;
+}
+
+
+.button.-blueish {
+    color: #FFFFFF;
+    background: #5769fe;
+}
+
+
+.-blueish:active {
+    background: #4c5de8;
+}
+
+
+.button.-salmon {
+    color: #FFFFFF;
+    background: #F32C52;
+}
+
+.button.-sun {
+    color: #f15c5c;
+    background: #feee7d;
+}
+
+.button.-alge {
+    color: #e7ff20;
+    background: #7999a9;
+}
+
+.button.-flower {
+    color: #FE8CDF;
+    background: #353866;
+}
+
+
+/***********************
+
+Ripple Effect For Buttons
+
+************************/
+
+.ripple {
+    display: block;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, .1);
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple span {
+    position: absolute;
+    display: block;
+    border-radius: 100%;
+}
+
+
+/* Button #4 */
+
+button {
+    background-color: #5769fe;
+}
+
+button span {
+    background-color: #495cff;
+}

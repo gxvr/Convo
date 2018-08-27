@@ -1,0 +1,340 @@
+<!--Author: Geofrey Xvr -->
+<doctype! html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>convo</title>
+
+        <!-- icon -->
+        <link rel="icon" href="./icon.png" type="image/x-icon" />
+        <link rel="shortcut icon" type="image/x-icon" href="./icon.png" />
+
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/style_two.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+        <link rel="stylesheet" href="./assets/css/reset.min.css">
+        <link rel="stylesheet" href="./assets/css/vivify.min.css">
+        <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./assets/css/fontello.css">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+
+        <script src="./assets/js/jquery-3.2.1.min.js"></script>
+
+
+        <script src="js/offline.min.js"></script>
+        <script src="./assets/js/tether.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/feather.min.js"></script>
+        <!-- Offlinejs Plugin Styles -->
+        <link rel="./assets/stylesheet" href="css/offline-language-english.css">
+        <link rel="./assets/stylesheet" href="css/offline-theme-slide.css">
+
+        <!-- Emoji One Area -->
+        <link rel="./assets/stylesheet" href="css/emojionearea.min.css">
+        <script src="./assets/js/emojionearea.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="body">
+
+            <!--   Emoji One Area Script -->
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $("#example1").emojioneArea({
+                        pickerPosition: "top",
+                        filtersPosition: "bottom",
+                        tonesStyle: "radio",
+                        hideSource: false,
+                    });
+                });
+
+            </script>
+
+
+            <div class="rows">
+                <!-- Side Panel -->
+                <div class="col-md-4 side-panel">
+
+                    <!--SideBar One-->
+                    <div class="side-one">
+
+                        <!-- Side Panel Header -->
+                        <div class="col-md-12 side-panel-header">
+
+                            <div class="">
+                                <img src="./assets/img/logo.png" class="logo">
+                            </div>
+
+
+                            <div class="User-area">
+                                <div class="user-photo">
+                                    <div class="status online"></div>
+                                    <div class="avatar"></div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="icon-more2">
+                                <div class="noti-status">
+                                    <div class="noti"></div>
+                                </div>
+
+
+                                <a title="Start New Chat">
+                                    <i data-feather="user-plus"></i>
+								</a>
+
+
+                                <a title="Notifications">
+									<i data-feather="bell"></i>
+								</a>
+                            </div>
+
+                        </div>
+
+                        <!-- Side Panel Profile -->
+
+
+                        <div id="users-list">
+                            <!-- Side Panel Search -->
+                            <div class="search-box">
+                                <input type=search data-search class="search" placeholder="Find people and conversations "><span class="icon "> <i data-feather="search"></i></span>
+                            </div>
+                            <!--  Temporary Users Starts  NOTE: For Testing Purposes -->
+                            <div class="left">
+                                <div class="users">
+                                    <ul class="people" data-searchable>
+                                        <li class="person" data-chat="person1">
+                                            <div class="user-status online"></div>
+                                            <img src="./assets/img/pro_2.png" alt="">
+                                            <span class="name">kevin minion</span>
+                                            <span class="time">Just now</span>
+                                            <span class="preview">Are you there bro?</span>
+                                        </li>
+                                        <li class="person" data-chat="person2">
+                                            <div class="user-status online"></div>
+                                            <img src="./assets/img/pro_5.png" alt="">
+                                            <span class="name">bo jackson</span>
+                                            <!-- <div class="verified-badge"></div> -->
+                                            <span class="time">3:52 AM</span>
+                                            <span class="preview">It disappear all by itself? Dude you lying</span>
+                                        </li>
+                                        <li class="person" data-chat="person3">
+                                            <div class="user-status offline"></div>
+                                            <img src="./assets/img/pro_6.png" alt="">
+                                            <span class="name">michael jordan</span>
+                                            <!-- <div class="verified-badge"></div> -->
+                                            <span class="time">7:08 PM</span>
+                                            <span class="preview">Yo bro, you won't believe what amma bout
+                                         to tellyou</span>
+                                        </li>
+                                        <li class="person" data-chat="person4">
+                                            <div class="user-status online"></div>
+                                            <img src="./assets/img/pro_7.png" alt="">
+                                            <span class="name">jane doe</span>
+                                            <!-- <div class="verified-badge"></div> -->
+                                            <span class="time">2:09 PM</span>
+                                            <span class="preview">This is that, you know the drill</span>
+
+                                        </li>
+                                        <li class="person" data-chat="person5">
+                                            <div class="user-status online"></div>
+                                            <img src="./assets/img/pro_4.png" alt="">
+                                            <span class="name">scrat</span>
+                                            <span class="time">Yesterday</span>
+                                            <span class="preview">Where is my nut?</span>
+                                        </li>
+                                        <li class="person" data-chat="person4">
+                                            <div class="user-status online"></div>
+                                            <img src="./assets/img/pro_7.png" alt="">
+                                            <span class="name">jane doe</span>
+                                            <!-- <div class="verified-badge"></div> -->
+                                            <span class="time">2:09 PM</span>
+                                            <span class="preview">This is that, you know the drill</span>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Side One Ends -->
+
+                </div>
+                <!-- Side Panel Ends -->
+
+
+                <!-- Message Body Starts -->
+
+                <div class="col-md-8 msg-wrapper">
+
+                    <div class="col-md-12 msg-wrapper-header">
+
+                        <div class="chat-user-meta">
+                            <span class="tag">
+                            <span class="tag-avatar ava" style="background-image: url(./assets/img/pro_2.png)"></span> bo jackson
+                            <div class="usr_name__online"></div>
+                            </span>
+                            <span class="user-typing">Typing…</span>
+                        </div>
+                        <div class="icon-more">
+                            <a href="./login.html"><i class="more" data-feather="log-out"></i></a>
+                        </div>
+
+                        <div class="icon-info">
+                            <i class="more" data-feather="help-circle"></i>
+                        </div>
+
+                        <div class="icon-video">
+                            <i class="more" data-feather="video"></i>
+                        </div>
+                    </div>
+
+                    <div class="msg-wrapper-body">
+
+                        <!--
+                        Displaying messages to user Starts
+                        -->
+
+                        <div class="msg-container" id="msg-container">
+                            <div class="msg-single" ng-repeat="msg_data in msgs" ng-style="{'float': uid==msg_data.to_id ? 'left' :'right'} ">
+
+                                <ul>
+
+                                    <!-- RECEIVED MESSAGE  -->
+                                    <div class="sender-message-line table-content vivify popInBottom">
+
+                                        <div class="table-content-cell" id="ava">
+                                            <img src="./assets/img/pro_2.png" alt="DP" class="avatar">
+                                        </div>
+
+                                        <div class="msg-conatiner">
+                                            <div class="actual-msg"></div>
+                                            <span>Dude are you up?!!</span>
+                                            <div class="message-seen text-right"> 9:55 pm</div>
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+
+                                    <!-- SENT MESSAGE  -->
+                                    <!--
+                                    <div class="sender-message-line table-content vivify swoopInBottom">
+
+                                        <div class="msg-conatiner-two">
+                                            <div class="actual-msg"></div>
+
+                                            <span>Dude just go to sleep</span>
+
+                                            <div class="">
+                                                <div class="message-seen text-right">9:40 pm</div>
+                                            </div>
+                                        </div>
+                                    </div>
+ -->
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <!--
+                        Displaying messages to user Ends
+                        -->
+
+
+                        <!-- Message input starts -->
+                        <div class="message-input input">
+
+                            <input type="text" id="message-to-send" placeholder="Type your message.." />
+
+                            <div class="emoji-btn open"><i data-feather="plus-square"></i>
+                                <div class="emoji-popup">
+                                    <div class="emoji-wrapper"></div>
+                                </div>
+                            </div>
+
+                            <div class="wrap">
+                                <button class="submit ripple"><i data-feather="send"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- SCRIPTS  -->
+
+        <!-- JS Chats Handlers   -->
+        <script id="message-template" type="text/x-handlebars-template">
+            <div class="sender-message-line table-content vivify popInBottom">
+                <div class="msg-conatiner-two">
+                    <div class="actual-msg"></div>
+
+                    <span>{{messageOutput}}</span>
+
+                    <div class="">
+                        <div class="message-seen text-right">{{time}}</div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <script id="message-response-template" type="text/x-handlebars-template">
+            <div class="sender-message-line table-content vivify swoopInBottom">
+
+                <div class="table-content-cell" id="ava">
+                    <img src="./assets/img/pro_2.png" alt="DP" class="avatar">
+                </div>
+
+                <div class="msg-conatiner">
+                    <div class="actual-msg"></div>
+
+                    <span>{{response}}</span>
+
+                    <div class="">
+                        <div class="message-seen text-right">{{time}}</div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+
+        <!-- Offlinejs Plugin -->
+        <!--
+                <script type="text/javascript">
+                    var run = function() {
+                        if (Offline.state === 'up')
+                            Offline.check();
+                    }
+                    setInterval(run, 5000);
+
+                </script>
+        -->
+
+        <script>
+            feather.replace()
+
+        </script>
+
+        <script src="assets/js/handlebars.min.js"></script>
+        <script src="assets/js/chats.js"></script>
+        <script src='./assets/js/search.js'></script>
+        <script src='./assets/js/emoji.js'></script>
+        <script src="./assets/js/ripple-button.js"></script>
+        <script src="./assets/js/index.js"></script>
+
+    </body>
+
+    </html>
