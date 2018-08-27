@@ -1,2 +1,2 @@
 # Convo
-Web app chat messenger built HTML, CSS, Javascript - Seed # 1
+Web app chat messenger built with HTML, CSS, Javascript - Seed # 1 
